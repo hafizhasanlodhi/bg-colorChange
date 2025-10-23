@@ -11,11 +11,13 @@ let arr = [
   "#FF5733",
 ];
 
+let span = document.querySelector("span");
+
 function inc() {
-  let num = Math.floor(Math.random() * 6);
+  let num = Math.floor(Math.random() * arr.length);
 
-  let abc = (document.body.style.backgroundColor = arr[num]);
-  console.log(abc);
+  let abc = document.body.style.backgroundColor = arr[num];
+  console.log(arr[num]);
 
-  document.textContent = "Hasan";
+  span.textContent = abc;
 }

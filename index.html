@@ -6,12 +6,35 @@
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <title>BgColor Change</title>
 </head>
+<style>
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ }
+
+ #colorText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50vh;
+  font-family:sans-serif;
+ }
+
+ button {
+  margin-left: 50vw;
+  border-radius: 3px;
+  border: solid 1.5px black;
+  font-size: 15px;
+ }
+
+</style>
 
 <body>
- 
- <h1  id="colorText" >Background Color </h1>
- <button onclick="inc()">Click ME</button>
 
+ <h1 id="colorText">Background Color <span > #FFFFFF</span> </h1>
+ <br>
+ <button onclick="inc()">Click Me</button>
  <script src="aap.js"></script>
 </body>
 
